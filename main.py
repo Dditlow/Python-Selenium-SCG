@@ -1,3 +1,4 @@
+# Git Add
 from importlib.resources import path
 import unittest
 from selenium import webdriver
@@ -8,7 +9,8 @@ from selenium.webdriver.support import expected_conditions as EC
 driver = webdriver.Chrome("chromedriver")
 driver.get("https://starcitygames.com/")
 assert "Star City Games | Magic the Gathering | MTG Card Search | MTG Singles | Decks" in driver.title
-elem = driver.find_element(By.XPATH, "/html/body/header/div[4]/div/div[2]/a[1]")
+elem = driver.find_element(
+    By.XPATH, "/html/body/header/div[4]/div/div[2]/a[1]")
 elem.click()
 elem.clear()
 elem.send_keys("Mana Crypt")
