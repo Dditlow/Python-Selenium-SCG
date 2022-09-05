@@ -1,12 +1,12 @@
 from element import BasePageElement
-from locators import MainPageLocators
+from locator import MainPageLocators
 
 class BasePage(object):
     def __init__(self, driver):
         self.driver = driver
 
 class MainPage(BasePage):
-    search_text_element = SearchTextElement()
+    #search_text_element = SearchTextElement()
 
     def is_title_matches(self):
         return "TCGplayer: Online Store for Collectible Trading Card Games" in self.driver.title
