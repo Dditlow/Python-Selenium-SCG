@@ -19,8 +19,7 @@ class TCGPlayercomSearch(unittest.TestCase):
         
     def test_title_search_in_tscgplayer_com():    
         # Checks if the word "TCGplayer: Online Store for Collectible Trading Card Games" is in title
-        self.assertTrue(main_page.is_title_matches(
-        ), "TCGplayer: Online Store for Collectible Trading Card Games")
+        self.assertTrue(main_page.is_title_matches(), "TCGplayer: Online Store for Collectible Trading Card Games")
         print(driver.main_page.title)
 
     def tearDown(self):
